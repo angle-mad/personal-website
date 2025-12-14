@@ -1,0 +1,43 @@
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif ;
+    text-align: center;
+    color: beige
+    
+}
+
+p{
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    color: beige
+}
+
+img{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background: linear-gradient(135deg, #AD4444, #6C5CE7);
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+    min-height: 100vh; /* This makes the body at least full screen height */
+    margin: 0;
+}
+
+.container_1{
+
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    padding: 0 20px; 
+    border: 4px dashed;
+    border-color: beige;
+}
+.underline {
+    text-decoration: underline;
+    font: bold;
+    color: white;
+}
