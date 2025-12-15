@@ -5,6 +5,13 @@ h1{
     
 }
 
+h3{
+    font-size: 45px;
+    font-family: "Comic Sans MS", "Comic Sans";
+    text-align: center;
+    color: beige;
+}
+
 p{
     font-family: Helvetica, sans-serif;
     text-align: left;
@@ -30,12 +37,19 @@ body{
     background-attachment: fixed;   
     background-position: center;
 }
-
+.page-btn{
+ background: linear-gradient(blue);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    background-attachment: fixed;   
+    background-position: center;
+}
 .container{
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(68, 56, 161, 0.3));
     border: 4px dashed beige;
     border-radius: 15px;
-    width: 100%;
+    width: 50%;
+    height: auto;   
     font-size: 16px;
     text-align: left;
     margin-left: auto;
@@ -182,8 +196,44 @@ h2{
 }
 
 .project-card img {
-    width: 500px;
+    width: 50%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
+}
+
+.btn-card .btn-88x31{
+  width: 88px;
+  height: 31px;
+  transition: none;
+  border-radius: 0px;
+}
+
+.btn-card .btn-88x31:hover{
+    transform: none;
+}
+
+.btn-card {
+    padding: 10px;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.btn-container{
+    flex-wrap: wrap; 
+    justify-content: center;
+    max-width: 800px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }

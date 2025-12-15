@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1><span class="underline">My Art</span></h1>
+
+<div class="projects-container">
+    
+    <div class="project-card">
+        <img src="art_1.png" alt="Art Piece 1">
+    </div>
+ <div class="project-card">
+        <img src="art_2.png" alt="Art Piece 2">
+    </div>
+     <div class="project-card">
+        <img src="art_3.png" alt="Art Piece 3">
+    </div>
+     <div class="project-card">
+        <img src="art_4.png" alt="Art Piece 4">
+    </div>
+     <div class="project-card">
+        <img src="art_5.png" alt="Art Piece 5">
+    </div>
+         <div class="project-card">
+        <img src="art_6.png" alt="Art Piece 6">
+    </div>
+</div>
+
+<div class="dropdown">
+    <button onclick="toggleDropdown()">☰</button>
+    <div class="content" id="dropdownContent">
+        <a href="index.html">Home</a>
+        <a href="page_2.html">Art</a>
+        <a href="page_3.html">88x31</a>
+    </div>
+</div>
+
+<script>
+function toggleDropdown() {
+    document.getElementById("dropdownContent").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
