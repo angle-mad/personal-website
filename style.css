@@ -30,6 +30,11 @@ img:hover{
     transform: scale(1.05);
     
 }
+
+html {
+    margin: 0;
+    padding: 0;
+}
 body{
     background: linear-gradient(135deg, #61bde5, #3d27e6);
     background-repeat: no-repeat;
@@ -38,6 +43,8 @@ body{
     background-position: center;
     min-height: 100vh;
     min-height: 100dvh;
+    margin: 0;
+    padding: 0;
 }
 .page-btn{
  background: linear-gradient(blue);
