@@ -33,9 +33,10 @@ img:hover{
 body{
     background: linear-gradient(135deg, #61bde5, #3d27e6);
     background-repeat: no-repeat;
-    background-size: 100% 100%;  
+    background-size: cover;
     background-attachment: fixed;   
     background-position: center;
+    min-height: 100dvh;
 }
 .page-btn{
  background: linear-gradient(blue);
