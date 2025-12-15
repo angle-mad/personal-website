@@ -25,10 +25,10 @@ img:hover{
 }
 body{
     background: linear-gradient(135deg, #61bde5, #3d27e6);
-    background-size: cover;
-    min-height:100vh;
-    margin: 0;
-    overflow: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    background-attachment: fixed;   
+    background-position: center;
 }
 
 .container{
