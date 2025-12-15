@@ -4,13 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 2</title>
+    <title>Projects - Angel</title>
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
 <body>
-<h1>My name is Walter Hartwell White</h1>
-<p>Chicka Chicka Slim Shady</p>
-<p>Hamburger</p>
 
+<h1><span class="underline">My Projects</span></h1>
 
-<body>
+<div class="projects-container">
+    
+    <div class="project-card">
+        <h2>555 LED Chaser</h2>
+        <img src="chaser.png" alt="555 LED Chaser Project Image";">
+        <p>
+            After following the blinky board tutorial on this website I was able to create my first PCB ever. I made the board look like a cat because they are my favorite animal. This project was also my first time soldering, which was an interesting experience. I'm surprised that it actually worked without that much setbacks.
+        </p>
+        <div class="project-links">
+            <a href="https://github.com/angle-mad/LED-Chaser">View Repo</a>
+            <a href="https://www.youtube.com/shorts/itHgP3uceek">Live Demo</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h2>RP2040 Devboard</h2>
+        <img src="dev_board.png" alt="Devboard Project Image";">
+        <p>
+            Following the tutorial by KaiPereira I will begin to understand how to use KiCad and understand the workings of a Devboard.
+        </p>
+        <div class="project-links">
+            <a href="https://github.com/angle-mad/devboard">View Repo</a>
+            
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h2>Knight Platformer</h2>
+        <img src="knight_platformer.png" alt="Platformer Project Image";">
+        <p>
+            A knight is traversing through strange lands. He comes across glowing berries that possess a unique quality. To travel further he must acquire 5 keys to open the locked door that blocks his path.
+        <div class="project-links">
+            <a href="https://github.com/angle-mad/Platformer">View Repo</a>
+            <a href="https://angle-mad.itch.io/knight-platformer">Live Demo</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="dropdown">
+    <button onclick="toggleDropdown()">☰</button>
+    <div class="content" id="dropdownContent">
+        <a href="index.html">Home</a>
+        <a href="#">Art</a>
+        <a href="#">88x31</a>
+    </div>
+</div>
+
+<script>
+function toggleDropdown() {
+    document.getElementById("dropdownContent").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>

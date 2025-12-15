@@ -32,6 +32,9 @@ body{
 }
 
 .container{
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(68, 56, 161, 0.3));
+    border: 4px dashed beige;
+    border-radius: 15px;
     width: 100%;
     font-size: 16px;
     text-align: left;
@@ -43,7 +46,6 @@ body{
     border-color: beige;
     display: flex;
     flex-direction: column
-
 }
 
 .container_small{
@@ -56,9 +58,11 @@ body{
     max-width: 200px;
     display: flex;
     gap:20px;
-    background: linear-gradient(135deg, #000000, #4438a1);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(68, 56, 161, 0.3));
     border-radius: 15px;
 }
+
+
 
 .underline {
     text-decoration: underline;
@@ -114,6 +118,7 @@ body{
     box-shadow: 2px 2px 5px hsla(0, 0%,0%, 0.8);
     top: 68px;
     right: 10px;
+    border-radius: 5px;
 }
 
 .dropdown {
@@ -126,4 +131,59 @@ body{
 
 .dropdown a:hover {
 background-color: hsl(0, 0%, 80%); 
+border-radius: 5px;
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+.projects-container {
+    max-width: 800px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-card {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(68, 56, 161, 0.3));
+    border: 4px dashed beige;
+    border-radius: 15px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.project-links a {
+    padding: 8px 16px;
+    background-color: hsl(266, 77%, 41%);
+    color: beige;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Helvetica, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.project-links a:hover {
+    background-color: hsl(266, 77%, 51%);
+}
+
+.project-card img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
