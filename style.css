@@ -1,166 +1,132 @@
+body{
+    background: #F6F3EF;
+    font-family: 'Inter', sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+
 h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif ;
     text-align: center;
-    color: beige
+    color: #2A2A2A;
+    font-size: 2.5rem;
     
 }
 
-h3{
-    font-size: 45px;
-    font-family: "Comic Sans MS", "Comic Sans";
+h2{
     text-align: center;
-    color: beige;
+    color: #2A2A2A;
+    font-size: 2rem;
+    margin-top: 3rem;
 }
+
 
 p{
     font-family: Helvetica, sans-serif;
-    text-align: left;
-    color: beige
+    text-align: center;
+    color: #111111;
 }
 
 img{
-
     display: block;
     margin-left: auto;
     margin-right: auto;
     transition: transform 1.2s ease;
+    max-width: 100%;
+    height: auto;
 }
+
 img:hover{
 
     transform: scale(1.05);
     
 }
 
-html {
-    margin: 0;
-    padding: 0;
-}
-body{
-    background: linear-gradient(135deg, #61bde5, #3d27e6);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;   
-    background-position: center;
-    min-height: 100vh;
-    min-height: 100dvh;
-    margin: 0;
-    padding: 0;
-}
-.page-btn{
- background: linear-gradient(blue);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;  
-    background-attachment: fixed;   
-    background-position: center;
-}
-.container{
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(68, 56, 161, 0.3));
-    border: 4px dashed beige;
-    border-radius: 15px;
-    width: 50%;
-    height: auto;   
-    font-size: 16px;
-    text-align: left;
+.scratch{
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 600px;
-    padding: 0 20px; 
-    border: 4px dashed;
-    border-color: beige;
+    border-radius: 6px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 485/402;
+}
+
+.underline{
+    border-bottom: 3px solid #1DB5B5;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+.container{
     display: flex;
-    flex-direction: column
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1100px;
+    width: 100%;
+    height: auto;
+    margin: 2rem auto;
 }
 
 .container_small{
-    width: 100%;
-    font-size: 16px;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 200px;
     display: flex;
-    gap:20px;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(68, 56, 161, 0.3));
-    border-radius: 15px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem auto;
 }
 
 
-
-.underline {
-    text-decoration: underline;
-    font-weight: bold;
-    color: whitesmoke;
+.container_small a{
+    width: 40px;
+    height: 40px;
+    background: #1DB5B5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
 }
 
 .container_small img{
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.container_small a:hover{
+    background: #17a1a1;
+}
+
+.project{
+flex: 0 1 45%;
+min-width: 300px;
+max-width: 500px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.navbar {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    
-} 
-.container_small img:hover{
-
-    transform: scale(1.2);
-    
-}
-
-
-
-
-.dropdown button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 10px 15px;
-    border: none;
-    background-color: hsl(266, 77%, 41%);
-    color: beige;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.dropdown .content.show {
-    display: block;
-}
-
-.dropdown a {
-    display: block;
-    color: black;
-    padding: 10px 15px;
-    text-decoration: none;
-    text-emphasis: none;
-}
-
-.dropdown .content {
-    display: none;
-    background-color: hsla(0, 0%, 60%, 0.8);
-    position: absolute;
-    min-width: 80px;
-    box-shadow: 2px 2px 5px hsla(0, 0%,0%, 0.8);
-    top: 68px;
-    right: 10px;
-    border-radius: 5px;
-}
-
-.dropdown {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 1.6rem;
+    background-color: #E8E4DF;
+    border-bottom: 1px solid #E0DCD7;
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
-}
+}   
 
-
-.dropdown a:hover {
-background-color: hsl(0, 0%, 80%); 
-border-radius: 5px;
-}
-
-h2{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
-    color: whitesmoke;
-    margin-bottom: 10px;
+.navbar img {
+    transition: transform 0.3s ease;
 }
 
 .projects-container {
@@ -172,8 +138,8 @@ h2{
 }
 
 .project-card {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(68, 56, 161, 0.3));
-    border: 4px dashed beige;
+    background: #E8E4DF;
+    border: 2px solid #E0DCD7;
     border-radius: 15px;
     padding: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -192,8 +158,8 @@ h2{
 
 .project-links a {
     padding: 8px 16px;
-    background-color: hsl(266, 77%, 41%);
-    color: beige;
+    background-color: #1DB5B5;
+    color: #FFFFFF;
     text-decoration: none;
     border-radius: 5px;
     font-family: Helvetica, sans-serif;
@@ -201,7 +167,7 @@ h2{
 }
 
 .project-links a:hover {
-    background-color: hsl(266, 77%, 51%);
+    background-color: #17a1a1;
 }
 
 .project-card img {
@@ -211,43 +177,7 @@ h2{
     margin-bottom: 15px;
 }
 
-.btn-card .btn-88x31{
-  width: 88px;
-  height: 31px;
-  transition: none;
-  border-radius: 0px;
+.Top-Text{
+    margin-top: 120px;
 }
 
-.btn-card .btn-88x31:hover{
-    transform: none;
-}
-
-.btn-card {
-    padding: 10px;
-    display: inline-block;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.btn-card:hover {
-    transform: none;
-    box-shadow: none;
-}
-
-.btn-container{
-    flex-wrap: wrap; 
-    justify-content: center;
-    max-width: 800px;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.Logo-Angel {
-   width: 40%;
-   max-width: 500px;
-}

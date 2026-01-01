@@ -7,42 +7,43 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="style.css">
     </head>
+
 <body>
 
-<h1>Hello my name is <span class="underline"></span></h1>
+<div class="navbar">
+         <a href="index.html"><img src="Group 6.png" alt="Homepage" ></a>
+        <a href="blueprint.html"><img src="Group 7.png" alt="Blueprint" ></a>
+        <a href="milkyway.html"><img src="Group 9.png" alt="Milkyway" ></a>
+        <a href="haxmas.html"><img src="Group 10.png" alt="Haxmas" ></a>
+        <a href="scratch.html"><img src="Group 12.png" alt="Scratch" ></a>
+        <a href="art.html"><img src="Group 8.png" alt="Art" ></a>
+    </div>
+    
+<h1 class="Top-Text">Hello my name is</h1>
 
-<img src="Logo-Angel.svg" alt="Logo with the Name Angel" class="Logo-Angel">
+<img src="New_Logo_Angel.png" alt="Logo with the name Angel" class="Logo-Angel">
 
-<h1><br><span class="underline">About Me</span></h1>
-
+<h2><span class="underline">About Me</span></h2>
 
  <div class="container">
     <p>
-         Hi, I'm a 16-year-old programmer from the U.S. and currently a junior in high school. I started coding in elementary school with Scratch, and over the past two years I've been learning Java. When I'm not coding, I enjoy playing video games and drawing.
-    </p>
+         Hi! I'm Angel Madrigal and I am currently 16 years old. I am half-way through my Juinor year of high school. For two years I have taken Computer sciences classes where I learned of the basics of programming and how computers work. Last year I actually got to learn my first programming language, Java. This language was required for the course and it was my first experience of coding without using blocks since I originally started my programming journey in elementary school using the website Scratch. The switch between the two methods was difficult but overall satisfying. This website was my second attempt at creating an actual website ever so I hope you enjoy it!
 </div>   
-<h1><br><span class="underline">My Socials</span></h1>
+
+<h2><span class="underline">Socials</span></h2>
+
 <div class="container_small">
 <a href="https://github.com/angle-mad"><img src="github.svg" alt="Github Logo"></a>
 <a href="https://www.youtube.com/@Angle_Mad"><img src="youtube.svg" alt="Youtube Logo"></a>
 <a href="https://www.instagram.com/angle__mad"><img src="instagram.svg" alt="Instagram Logo"></a>
 </div>
 
-<div class="dropdown">
-    <button onclick="toggleDropdown()">☰</button>
-
-    <div class="content" id="dropdownContent">
-        <a href="page_1.html">Projects</a>
-        <a href="page_2.html">Art</a>
-        <a href="page_3.html">88x31</a>
-
-    </div>
+<div class="container">
+<pagering-link theme="light"></pagering-link>
 </div>
-<script>
-function toggleDropdown() {
-    document
-        .getElementById("dropdownContent")
-        .classList.toggle("show");
-}
-</script>
-<body>
+
+<script src="https://pagering.gideon.sh/embed.js" defer></script>
+
+
+</body>
+</html>
